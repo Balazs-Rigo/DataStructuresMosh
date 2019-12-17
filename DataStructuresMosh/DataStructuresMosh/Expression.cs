@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,23 +7,41 @@ namespace DataStructuresMosh
 {
     public class Expression
     {
-        public static bool isBalanced(string input)
+        private readonly List<char> leftBrackets = new List<char>() { '(', '<', '[', '{' };
+        private readonly List<char> rightBrackets = new List<char>() { ')', '>', ']', '}' };
+        public bool isBalanced(string input)
         {
             Stack<char> stack = new Stack<char>();
 
-            foreach (var item in input.ToCharArray())
+            foreach (var ch in input.ToCharArray())
             {
-                if (item == '(')
-                    stack.Push(item);
+                if (IsLeftBracket(ch))
+                    stack.Push(ch);
 
-                if (item == ')')
+                if (IsRightBracket(ch))
                 {
                     if (stack.Count == 0) return false;
-                    stack.Pop();
+
+                    var top = stack.Pop();
+                    if (!BracketsMatch(top, ch)) return false;
                 }
             }
-
             return stack.Count == 0;
+        }
+
+        private bool IsLeftBracket(char ch)
+        {
+            return leftBrackets.Contains(ch);
+        }
+
+        private bool IsRightBracket(char ch)
+        {
+            return rightBrackets.Contains(ch);
+        }
+
+        private bool BracketsMatch(char left, char right)
+        {
+          return leftBrackets.IndexOf(left) == rightBrackets.IndexOf(right);
         }
 
     }

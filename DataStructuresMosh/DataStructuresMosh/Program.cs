@@ -58,10 +58,27 @@ namespace DataStructuresMosh
 
             #region reversing string
             //Console.WriteLine(StringReverser.Reverse("Nincs itt hideg?"));
-            Console.WriteLine(Expression.isBalanced("((2+2)*(4+4))"));
-            Console.ReadLine();
+            //Console.WriteLine(Expression.isBalanced("((2+2)*(4+4))"));
+            //Console.ReadLine();
 
             #endregion
+
+            #region stack
+            Stack stack = new Stack();
+            stack.push(10);
+            stack.push(20);
+            stack.push(30);
+
+            stack.pop();
+
+            Console.WriteLine(stack.ToString());
+
+
+            Console.ReadLine();
+
+
+            #endregion
+
         }
 
         public void log(int[] numbers)
