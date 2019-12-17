@@ -158,6 +158,20 @@ namespace DataStructuresMosh
             return a.value;
         }
 
+        public int GetKthMinus1(int k)
+        {
+            var a = first;
+            var b = first;
+
+            for (int i = 0; i < k - 1; i++)
+            {
+                b = b.next;
+                if (b == null)
+                    throw new ArgumentOutOfRangeException();
+            }
+            return b.value;
+        }
+
         private Node GetPrevious(Node node)
         {
             var current = first;

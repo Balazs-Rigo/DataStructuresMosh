@@ -5,7 +5,7 @@ namespace DataStructuresMosh
     class Program
     {
         static void Main(string[] args)
-        {           
+        {
             #region sajat array
             //int[] numbers = new int[10] {12,56,834,99,23,81,654,8,12,546 };
 
@@ -30,10 +30,35 @@ namespace DataStructuresMosh
 
             #region mosh linked list
 
-            LinkedList list = new LinkedList();
-            list.AddFirst(14);
+            //LinkedList list = new LinkedList();
+            //list.AddLast(14);
+            //list.AddLast(22);
+            //list.AddLast(31);
+            //list.AddLast(77);
+            //list.AddLast(11);
+            //list.AddLast(42);
+
+            //int[] listArray = list.toArray();
+
+            //foreach (var item in listArray)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine();
+
+            //Console.WriteLine("Get k-1: "+list.GetKthMinus1(3));
+            //Console.WriteLine("Get k: " + list.GetKthFromTheEnd(3));
 
 
+            //Console.ReadLine();
+
+            #endregion
+
+            #region reversing string
+            //Console.WriteLine(StringReverser.Reverse("Nincs itt hideg?"));
+            Console.WriteLine(Expression.isBalanced("((2+2)*(4+4))"));
             Console.ReadLine();
 
             #endregion
