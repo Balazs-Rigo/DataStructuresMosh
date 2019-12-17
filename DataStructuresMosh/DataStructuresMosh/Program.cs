@@ -64,20 +64,37 @@ namespace DataStructuresMosh
             #endregion
 
             #region stack
-            Stack stack = new Stack();
-            stack.push(10);
-            stack.push(20);
-            stack.push(30);
+            //Stack stack = new Stack();
+            //stack.push(10);
+            //stack.push(20);
+            //stack.push(30);
 
-            stack.pop();
+            //stack.pop();
 
-            Console.WriteLine(stack.ToString());
+            //Console.WriteLine(stack.ToString());
 
+            //Console.ReadLine();
+            #endregion
+
+            #region queue
+            //System.Collections.Generic.Queue<int> queue = new System.Collections.Generic.Queue<int>();
+            // queue.Enqueue(10);
+            // queue.Enqueue(20);
+            // queue.Enqueue(30);
+
+            ArrayQueue queue = new ArrayQueue(5);
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            var front = queue.Dequeue();
+
+            Console.WriteLine(front);
+            Console.WriteLine(queue.ToString());
+            //Queue.Reverse(queue);
 
             Console.ReadLine();
-
-
             #endregion
+
 
         }
 
