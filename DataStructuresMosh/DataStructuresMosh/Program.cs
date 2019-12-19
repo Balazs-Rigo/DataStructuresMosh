@@ -82,20 +82,70 @@ namespace DataStructuresMosh
             // queue.Enqueue(20);
             // queue.Enqueue(30);
 
-            ArrayQueue queue = new ArrayQueue(5);
-            queue.Enqueue(10);
-            queue.Enqueue(20);
-            queue.Enqueue(30);
-            var front = queue.Dequeue();
+            //ArrayQueue queue = new ArrayQueue(5);
+            //queue.Enqueue(10);
+            //queue.Enqueue(20);
+            //queue.Enqueue(30);
+            //var front = queue.Dequeue();
 
-            Console.WriteLine(front);
-            Console.WriteLine(queue.ToString());
-            //Queue.Reverse(queue);
+            //Console.WriteLine(front);
+            //Console.WriteLine(queue.ToString());
+            ////Queue.Reverse(queue);
 
-            Console.ReadLine();
+            //Console.ReadLine();
             #endregion
 
+            #region CircualArrayqueue
+            //System.Collections.Generic.Queue<int> queue = new System.Collections.Generic.Queue<int>();
+            // queue.Enqueue(10);
+            // queue.Enqueue(20);
+            // queue.Enqueue(30);
 
+            //CircularArrayQueue queue = new CircularArrayQueue(5);
+            //queue.Enqueue(10);
+            //queue.Enqueue(20);
+            //queue.Enqueue(30);
+            //var front = queue.Dequeue();
+            //queue.Dequeue();
+            //queue.Enqueue(40);
+            //queue.Enqueue(50);
+            //queue.Enqueue(60);
+            //queue.Enqueue(70);
+            //queue.Dequeue();
+            //queue.Dequeue();
+
+            //Console.WriteLine(front);
+            //Console.WriteLine(queue.ToString());
+            ////Queue.Reverse(queue);
+
+            //Console.ReadLine();
+            #endregion
+
+            #region Queue with two stacks
+            //QueueWithTwoStacks queue = new QueueWithTwoStacks();
+            //queue.Enqueue(10);
+            //queue.Enqueue(20);
+            //queue.Enqueue(30);
+            //queue.Dequeue();
+            //queue.Dequeue();
+            //queue.Dequeue();
+            //var first = queue.Dequeue();
+            //Console.WriteLine(first);
+
+            #endregion
+
+            #region PriorityQueue
+            PriorityQueue queue = new PriorityQueue();
+            queue.Add(5);
+            queue.Add(3);
+            queue.Add(6);
+            queue.Add(1);
+            queue.Add(4);
+            queue.Add(10);
+            Console.WriteLine(queue);
+            #endregion
+
+            Console.ReadLine();
         }
 
         public void log(int[] numbers)

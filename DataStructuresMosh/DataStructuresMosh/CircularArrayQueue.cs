@@ -4,14 +4,14 @@ using System.Text;
 
 namespace DataStructuresMosh
 {
-    public class ArrayQueue
+    public class CircularArrayQueue
     {
         private int[] items;
         private int rear;
         private int count;
         private int front;
 
-        public ArrayQueue(int capacity)
+        public CircularArrayQueue(int capacity)
         {
             items = new int[capacity];
         }
@@ -21,14 +21,16 @@ namespace DataStructuresMosh
             if (count == items.Length)
                 throw new InvalidOperationException();
 
-            items[rear++] = item;
+            items[rear] = item;
+            rear = (rear + 1) % items.Length;
             count++;
         }
 
         public int Dequeue()
         {
             var item = items[front];
-            items[front++] = 0;
+            items[front] = 0;
+            front = (front + 1) % items.Length;
             count--;
             return item;
         }
