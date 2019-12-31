@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DataStructuresMosh
 {
@@ -135,15 +136,35 @@ namespace DataStructuresMosh
             #endregion
 
             #region PriorityQueue
-            PriorityQueue queue = new PriorityQueue();
-            queue.Add(5);
-            queue.Add(3);
-            queue.Add(6);
-            queue.Add(1);
-            queue.Add(4);
-            queue.Add(10);
-            Console.WriteLine(queue);
+            //PriorityQueue queue = new PriorityQueue();
+            //queue.Add(5);
+            //queue.Add(3);
+            //queue.Add(6);
+            //queue.Add(1);
+            //queue.Add(4);
+            //queue.Add(10);
+            //Console.WriteLine(queue);
             #endregion
+
+            #region HashTable
+            //Dictionary<int?, string> map = new Dictionary<int?, string>();
+            //map.Add(1, "Mosh");
+            //map.Add(2, "John");
+            //map.Add(3, "Mary");
+            //map.Add(4, null);
+            //Console.WriteLine(string.Join(' ', map));
+
+            #endregion
+
+            #region Dictionary and Set
+            CharFinder finder = new CharFinder();
+            var ch = finder.FindFirstRepeatedChar("a green apple");
+
+            Console.WriteLine(ch);
+
+            #endregion
+
+
 
             Console.ReadLine();
         }
