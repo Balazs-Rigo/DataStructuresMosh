@@ -157,14 +157,28 @@ namespace DataStructuresMosh
             #endregion
 
             #region Dictionary and Set
-            CharFinder finder = new CharFinder();
-            var ch = finder.FindFirstRepeatedChar("a green apple");
+            //CharFinder finder = new CharFinder();
+            //var ch = finder.FindFirstRepeatedChar("a green apple");
 
-            Console.WriteLine(ch);
+            //Console.WriteLine(ch);
 
             #endregion
 
+            #region tree
+            //Tree tree = new Tree();
+            //tree.Insert(7);
+            //tree.Insert(4);
+            //tree.Insert(9);
+            //tree.Insert(1);
+            //tree.Insert(6);
+            //Console.WriteLine(tree.Find(6));
+            //Console.WriteLine("Done");
+            #endregion
 
+            #region recursion
+            int fact = Recursion.factorial(4);
+            Console.WriteLine(fact);
+            #endregion
 
             Console.ReadLine();
         }
