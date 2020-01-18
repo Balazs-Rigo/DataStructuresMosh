@@ -165,7 +165,7 @@ namespace DataStructuresMosh
             #endregion
 
             #region tree
-            Tree tree = new Tree();
+            /*Tree tree = new Tree();
             tree.Insert(7);
             tree.Insert(4);
             tree.Insert(9);
@@ -206,12 +206,22 @@ namespace DataStructuresMosh
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine("Done");
+            Console.WriteLine("Done");*/
             #endregion
 
             #region recursion
             //int fact = Recursion.factorial(4);
             //Console.WriteLine(fact);
+            #endregion
+
+            #region AVL trees
+            var tree = new AVLTree();
+            tree.Insert(10);
+            tree.Insert(20);
+            tree.Insert(30);
+            tree.Insert(40);
+            tree.Insert(50);
+            tree.Insert(60);
             #endregion
 
             Console.ReadLine();
