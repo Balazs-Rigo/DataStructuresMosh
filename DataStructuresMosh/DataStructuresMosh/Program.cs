@@ -165,19 +165,53 @@ namespace DataStructuresMosh
             #endregion
 
             #region tree
-            //Tree tree = new Tree();
-            //tree.Insert(7);
-            //tree.Insert(4);
-            //tree.Insert(9);
-            //tree.Insert(1);
-            //tree.Insert(6);
-            //Console.WriteLine(tree.Find(6));
-            //Console.WriteLine("Done");
+            Tree tree = new Tree();
+            tree.Insert(7);
+            tree.Insert(4);
+            tree.Insert(9);
+            tree.Insert(1);
+            tree.Insert(6);
+            //tree.Insert(22);
+            //tree.Insert(11);
+            //tree.Insert(3);
+
+            Tree tree2 = new Tree();
+            tree2.Insert(7);
+            tree2.Insert(4);
+            tree2.Insert(9);
+            tree2.Insert(1);
+            tree2.Insert(6);
+            //tree2.Insert(22);
+            //tree2.Insert(11);
+            //tree2.Insert(3);
+
+            Console.WriteLine(tree.Find(6));
+            Console.WriteLine();
+            Console.WriteLine("Pre-order: ");
+            tree.TraversePreOrder();
+            Console.WriteLine();
+            Console.WriteLine("In-order: ");
+            tree.TraverseInOrder();
+            Console.WriteLine();
+            Console.WriteLine("Post-order: ");
+            tree.TraversePostOrder();
+            Console.WriteLine();
+            Console.WriteLine("Height of the tree is: "+tree.Height());
+            Console.WriteLine("Min value is: "+tree.Min());
+            Console.WriteLine("A ket fa egyenlo: "+tree.Equals(tree2));
+            tree.SwapRoot();
+            Console.WriteLine("Is binary search tree: "+tree.IsBinarySearchTree());
+            var list = tree.GetNodeAtDistance(1);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Done");
             #endregion
 
             #region recursion
-            int fact = Recursion.factorial(4);
-            Console.WriteLine(fact);
+            //int fact = Recursion.factorial(4);
+            //Console.WriteLine(fact);
             #endregion
 
             Console.ReadLine();
