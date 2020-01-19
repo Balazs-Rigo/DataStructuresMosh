@@ -215,13 +215,30 @@ namespace DataStructuresMosh
             #endregion
 
             #region AVL trees
-            var tree = new AVLTree();
-            tree.Insert(10);
-            tree.Insert(20);
-            tree.Insert(30);
-            tree.Insert(40);
-            tree.Insert(50);
-            tree.Insert(60);
+            //var tree = new AVLTree();
+            //tree.Insert(10);
+            //tree.Insert(20);
+            //tree.Insert(30);
+            //tree.Insert(40);
+            //tree.Insert(50);
+            //tree.Insert(60);
+            #endregion
+
+            #region Heap
+            //var heap = new Heap();
+            //heap.Insert(10);
+            //heap.Insert(5);
+            //heap.Insert(17);
+            //heap.Insert(4); 
+            //heap.Insert(22);
+            //Console.WriteLine(heap.Remove());
+            //Console.WriteLine(heap.Remove());
+            //Console.WriteLine("Done!");
+            #endregion
+
+            #region heapify
+            int[] numbers = {5,3,8,4,1,2 };
+            Console.WriteLine(MaxHeap.GetKthLargest(numbers,4));
             #endregion
 
             Console.ReadLine();
