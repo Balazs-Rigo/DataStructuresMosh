@@ -237,8 +237,20 @@ namespace DataStructuresMosh
             #endregion
 
             #region heapify
-            int[] numbers = {5,3,8,4,1,2 };
-            Console.WriteLine(MaxHeap.GetKthLargest(numbers,4));
+            //int[] numbers = {5,3,8,4,1,2 };
+            //Console.WriteLine(MaxHeap.GetKthLargest(numbers,4));
+            #endregion
+
+            #region Trie
+            var trie = new Trie();
+            trie.Insert("car");
+            trie.Insert("care");
+            trie.Insert("card");
+            trie.Insert("careful");
+            trie.Insert("egg");
+            var words = trie.FindWords("care");
+            Console.WriteLine(words);
+            Console.WriteLine("Done!");
             #endregion
 
             Console.ReadLine();
