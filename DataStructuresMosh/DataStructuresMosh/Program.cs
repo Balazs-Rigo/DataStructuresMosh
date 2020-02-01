@@ -242,15 +242,29 @@ namespace DataStructuresMosh
             #endregion
 
             #region Trie
-            var trie = new Trie();
-            trie.Insert("car");
-            trie.Insert("care");
-            trie.Insert("card");
-            trie.Insert("careful");
-            trie.Insert("egg");
-            var words = trie.FindWords("care");
-            Console.WriteLine(words);
-            Console.WriteLine("Done!");
+            //var trie = new Trie();
+            //trie.Insert("car");
+            //trie.Insert("care");
+            //trie.Insert("card");
+            //trie.Insert("careful");
+            //trie.Insert("egg");
+            //var words = trie.FindWords("care");
+            //Console.WriteLine(words);
+            //Console.WriteLine("Done!");
+            #endregion
+
+            #region Graph
+            var graph = new Graph();
+            graph.AddNode("A");
+            graph.AddNode("B");
+            graph.AddNode("C");
+            graph.AddEdge("A","B");
+            graph.AddEdge("A", "C");
+            graph.AddEdge("D", "C");
+            graph.AddEdge("A", "C");
+            graph.TraverseDepthFirst("A");
+
+            graph.Print();
             #endregion
 
             Console.ReadLine();
